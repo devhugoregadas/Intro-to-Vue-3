@@ -5,6 +5,7 @@ const app = Vue.createApp({
             product: 'Socks',
             brand: 'Vue Mastery',
             selectedVariant: 0,
+            inStock: true,
             details: ['50% cotton', '30% wool', '20% polyester'],
             variants: [
               { id: 2234, color: 'green', image: './assets/images/socks_green.jpg', quantity: 50 },
@@ -16,9 +17,8 @@ const app = Vue.createApp({
         addToCart() {
             this.cart += 1
         },
-        updateVariant(index) {
-            this.selectedVariant = index
-            console.log(index)
+        updateImage(variantImage) {
+            this.image = variantImage
         }
     },
     computed: {

@@ -17,8 +17,7 @@ const app = Vue.createApp({
             this.cart += 1
         },
         updateVariant(index) {
-            this.selectedVariant = index
-            console.log(index)
+            this.selectedVariant = variantImage
         }
     },
     computed: {

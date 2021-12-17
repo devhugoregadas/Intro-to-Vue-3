@@ -30,7 +30,7 @@
 
             <div 
               class="color-circle" 
-              v-for="variant, index in variants" 
+              v-for="variant in variants" 
               :key="variant.id" 
               @mouseover="updateImage(index)" 
               :style="{ backgroundColor: variant.color }"></div>

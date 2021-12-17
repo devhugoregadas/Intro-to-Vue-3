@@ -18,7 +18,7 @@ const app = Vue.createApp({
         },
         updateVariant(index) {
             this.selectedVariant = index
-            console.log(index)
+            console.log(this.selectedVariant)
         }
     },
     computed: {
